@@ -4,16 +4,18 @@ import Style from "./ScrollToTop.module.scss";
 
 const ScrollToTop = () => {
   const handleScrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window && window.scrollTo({ top: 0, behavior: "smooth" });
   };
   
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      document.body.classList.toggle(
-        "scroll-to-top-active",
-        window.scrollY >= 100
-      );
-    });
+    if(window){
+      window.addEventListener("scroll", () => {
+        document.body.classList.toggle(
+          "scroll-to-top-active",
+          window.scrollY >= 100
+        );
+      });
+    }
   }, []);
 
   return (

@@ -15,31 +15,31 @@ import { MdClose } from 'react-icons/md';
 const HomeWhoWeCare = (props) => {
 
 
-  useGSAP((self)=>{
+  // useGSAP((self)=>{
 
-    gsap.set(".bg-anim",{"backgroundSize":"0%"})
+  //   gsap.set(".bg-anim",{"backgroundSize":"0%"})
 
 
-    const animateBg = gsap.to(".bg-anim",{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
+  //   const animateBg = gsap.to(".bg-anim",{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
         
-    ScrollTrigger.create({
-      trigger: ".bg-anim",
-      start:"top bottom",
-      end:"+=100%",
-      animation: animateBg,
+  //   ScrollTrigger.create({
+  //     trigger: ".bg-anim",
+  //     start:"top bottom",
+  //     end:"+=100%",
+  //     animation: animateBg,
       
       
-    });
+  //   });
 
     
 
 
 
-  },{scope: ".HomeWhoWeCare"}
+  // },{scope: ".HomeWhoWeCare"}
 
 
 
-  )
+  // )
 
 
 
@@ -57,7 +57,7 @@ const HomeWhoWeCare = (props) => {
 
   useEffect(() => {
     showModal ? lenis?.stop() : lenis?.start()
-  }, [showModal]);
+  }, [showModal, lenis]);
 
   return (
     <section data-widget="HomeWhoWeCare" className="bg-black HomeWhoWeCare">
@@ -117,7 +117,6 @@ const HomeWhoWeCare = (props) => {
               <span className="text-[18px]">Watch our video</span>{" "}
             </div>
 
-            {/* popup */}
           </div>
 
           <div className="text-white max-w-full lg:max-w-[264px] l flex flex-col gap-4 mb-[36px] xl:mb-0">

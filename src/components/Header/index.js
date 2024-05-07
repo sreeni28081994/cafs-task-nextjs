@@ -11,7 +11,7 @@ const MainHeader = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
+      if (window?.scrollY > 50) {
         setstate(true)
       } else {
       setstate(false)

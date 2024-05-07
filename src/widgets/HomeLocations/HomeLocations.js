@@ -21,7 +21,7 @@ var element = document.getElementById('movetoTop');
 var rect = element.getBoundingClientRect();
 
 // Get the top value
-var topValue = rect.top + window.scrollY;
+  var topValue = rect.top + window.scrollY;
 
 
 

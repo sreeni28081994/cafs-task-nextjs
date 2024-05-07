@@ -16,7 +16,7 @@ const HomeServe = (props) => {
 
   useGSAP(
     (self) => {
-      const mediaQuery = window.matchMedia("(min-width: 992px)");
+      const mediaQuery = gsap.matchMedia("(min-width: 992px)");
       if (mediaQuery.matches) {
         let left_c = self.selector(".left-inner");
         let img = self.selector(".photo");

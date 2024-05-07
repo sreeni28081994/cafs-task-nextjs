@@ -1,5 +1,4 @@
 
-
 const nextFetch = async (slug, ...opt) => {
     const fetchOptions = {
       cache: "no-store",

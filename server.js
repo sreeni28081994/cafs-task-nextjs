@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/api/general/:slug", (req, res) => {
-  let dbJson = require("./src/api/staticData/db.json");
+  let dbJson = require("./src/api/staticData/db.js");
   const params = req.params;
 
   let slug = params?.slug;

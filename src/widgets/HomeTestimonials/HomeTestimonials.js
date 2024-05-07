@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -10,17 +9,10 @@ import "swiper/css/thumbs";
 import "swiper/css/pagination"; // Import pagination CSS
 import { useLenis } from "@studio-freight/react-lenis";
 import { MdClose } from 'react-icons/md';
-
-
-
-
-
-// import required modules
 import {
   Navigation,
   Pagination,
   Autoplay,
-  Thumbs,
 } from "swiper/modules";
 import Image from "next/image";
 
@@ -41,7 +33,7 @@ const HomeTestimonials = (props) => {
 
   useEffect(() => {
     showModal ? lenis?.stop() : lenis?.start()
-  }, [showModal]);
+  }, [showModal, lenis]);
 
   useEffect(() => {
     swiperref?.current?.swiper?.slideTo(currentIndex)  

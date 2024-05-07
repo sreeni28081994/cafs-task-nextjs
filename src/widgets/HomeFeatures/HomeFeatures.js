@@ -12,50 +12,54 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const HomeFeatures = (props) => {
-    useGSAP(
-        (self) => {
-          // gsap code here...
+    // useGSAP(
+    //     (self) => {
+    //       // gsap code here...
 
-                const mediaQuery = window.matchMedia('(min-width: 1200px)');
-       if(mediaQuery.matches){
-          const boxes=document.querySelector(".boxes")
-          const container=document.querySelector(".containerWidth")
-          const containerWidth =container.offsetWidth
-          const amounttoScroll = boxes.offsetWidth - containerWidth
+    //             const mediaQuery = window.matchMedia('(min-width: 1200px)');
+    //    if(mediaQuery.matches){
+    //       const boxes=document.querySelector(".boxes")
+    //       const container=document.querySelector(".containerWidth");
 
 
-          const tween=gsap.to(boxes,{
-
-            x: -amounttoScroll+"px",
-            duration:5,
-            ease:"linear"
+    //       console.log(boxes, container, "hhhhhhh");
+    //       const containerWidth =container.offsetWidth
+    //       const amounttoScroll = boxes.offsetWidth - containerWidth
 
 
+    //       const tween=gsap.to(boxes,{
 
-          }
+    //         x: -amounttoScroll+"px",
+    //         duration:5,
+    //         ease:"linear"
+
+
+
+    //       }
 
         
         
-        )
+    //     )
     
         
     
-        ScrollTrigger.create({
-            trigger: ".pinsection",
-            start: "5% 10%",
-            end: "+="+amounttoScroll ,
-            pin: ".pinsection",
-            scrub: true,
-            // markers: true,
-            animation: tween,
-            invalidateOnRefresh: true // Invalidate on refresh to recalculate end value
-          });
+    //     ScrollTrigger.create({
+    //         trigger: ".pinsection",
+    //         start: "5% 10%",
+    //         end: "+="+amounttoScroll ,
+    //         pin: ".pinsection",
+    //         scrub: true,
+    //         // markers: true,
+    //         animation: tween,
+    //         invalidateOnRefresh: true // Invalidate on refresh to recalculate end value
+    //       });
 
           
-        }
-        },
-        { scope: ".featuresection" }
-      );
+    //     }
+    //     },
+    //     { scope: ".featuresection" }
+    //   );
+    
     return (
         <section className='bg-[#EEF5F9] xl:pt-[128px] py-[50px] xl:py-[114px] overflow-x-hidden featuresection'>
 
