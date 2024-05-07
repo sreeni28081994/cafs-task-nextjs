@@ -1,7 +1,14 @@
 import WidgetBlocks from "@/utilities/WidgetBlock";
 import nextFetch from "@/utilities/nextFetch";
+
+const fsp = require('fs').promises
+
 export async function generateMetadata({ params }) {
-  const data = await nextFetch(`api/general/homepage`);
+  // const data = await nextFetch(`api/general/homepage`);
+
+  const file_data = await fsp.readFile('./src/api/staticData/db.json');
+  const json_data = JSON.parse(file_data);
+  const data = json_data['homepage'];
   return {
     title: data?.data?.seo?.metaTitle,
     description: data?.data?.seo?.metaDescription,
@@ -12,7 +19,10 @@ export async function generateMetadata({ params }) {
 }
 
 const HomePage = async() => {
-  const data = await nextFetch("api/general/homepage"); 
+  // const data = await nextFetch("api/general/homepage"); 
+  const file_data = await fsp.readFile('./src/api/staticData/db.json');
+  const json_data = JSON.parse(file_data);
+  const data = json_data['homepage'];
   return (
     <>
      <main className="isHome">
