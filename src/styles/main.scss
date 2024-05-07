@@ -1,0 +1,402 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./mixins";
+
+$base-size:16;
+
+:root {
+    --primary:#5bb700;
+    --primary-100:lightern(#00b828);
+    --primary-500:lightern(--primary, 50%);
+    --primary-900:lightern(#194f86);
+    --secondary:#45B5F0;
+    --secondary-footer:#0a275b;
+    --white:#fff;
+    --white-700:rgba(255, 255, 255, 0.7);
+    --white-500:rgba(255, 255, 255, 0.05);
+    --white-600:rgba(78, 48, 48, 0.55);
+    --white-800:#e7f8ff;
+    --grey:#f0f0f0;
+    --green:#c5f63e;
+    --yellow:#fdea39;
+    --bluelight:#d6e9f6;
+    --yellowlight:#eff1e2;
+    --turquoise:#9effe8;
+    --text-xs:#{size(14)};
+    --text-sm:#{size(16)};
+    --text-md:#{size(18)};
+    --text-lg:#{size(20)};
+    --text-xl:#{size(22)};
+    --text-h6:#{size(24)};
+    --text-h5:#{size(28)};
+    --text-h4:#{size(40)};
+    --text-h3:#{size(50)};
+    --text-h2:#{size(45)};
+    --text-h1:#{size(70)};
+    --text-p:#{size(20)};
+    --transparent:#00000000;
+    --js-gutter-x:32px;
+
+    /* padding*/
+    --space-xs:#{size(4)};
+    --space-sm:#{size(6)};
+    --space-md:#{size(16)};
+    --space-lg:#{size(20)};
+
+    /* border radius */
+    --radius-sm:4px;
+    --radius-sm2:8px;
+    --radius-md:15px;
+    --radius-lg:32px;
+
+    /*border-color */
+    --border-color:#dee6f4;
+
+    @layer base {
+
+        h1,
+        .h1 {
+            &:not(.ttl) {
+                @apply text-[40px] sm:text-[40px] lg:text-[60px] xxxl:text-h1;
+            }
+        }
+
+        h2,
+        .h2 {
+            &:not(.ttl) {
+                @apply text-[30px] sm:text-[30px] lg:text-[100px] xxxl:text-[100px];
+            }
+        }
+
+        h3,
+        .h3 {
+            &:not(.ttl) {
+                @apply text-[32px] sm:text-[32px] lg:text-[30px] xxxl:text-h3;
+            }
+        }
+
+        h4,
+        .h4 {
+            &:not(.ttl) {
+                @apply text-[25px] md:text-[30px] lg:text-[35px] xxxl:text-h4;
+            }
+        }
+
+        h5,
+        .h5 {
+            &:not(.ttl) {
+                @apply text-[18px] lg:text-[18px];
+            }
+        }
+
+        h6,
+        .h6 {
+            &:not(.ttl) {
+                @apply text-[16px] lg:text-[16px] xxxl:text-sm;
+            }
+        }
+
+        p,
+        .p {
+            &:not(.para) {
+                @apply text-[16px] lg:text-[16px];
+            }
+        }
+    }
+}
+
+//form
+.form {
+    &-group {
+        &:not(.item) {
+            @apply lg:mb-4;
+
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+.text-underline-offset{
+    text-underline-offset: 2px
+}
+
+.popupVideo{
+    @include aspectRatio(197,112)
+}
+
+// .serveFigure{
+//     @include aspectRatio(637,760)
+// }
+.featureimg{
+    @include aspectRatio(375,376);
+    img{
+        width:100%;
+        height:100%
+    }
+}
+
+.mask{
+    mask-image: url(/images/diamond.svg);
+    mask-size: cover;
+    mask-position: center;
+}
+
+
+.testimonialimg{
+    @include aspectRatio(343,340)
+}
+
+.insightImg{
+    @include aspectRatio(307,179)
+
+    
+}
+
+.logoImg{
+    @include aspectRatio(96.523, 29.238)
+
+
+}
+.wrapper{
+    padding-left: 66px;
+    padding-right: 66px;
+    padding-top: 43px;
+    padding-bottom: 43px
+}
+.clientImg{
+    @include aspectRatio(154,65);
+
+    img{
+        object-fit :contain; 
+        
+    }
+}
+
+.starImg{
+    @include aspectRatio(32.497,32.8)
+
+
+}
+
+.serveFigure{
+    @include aspectRatio(638,761)
+
+
+}
+
+
+
+
+.progress{
+    width: 0%;
+
+}
+
+.swiper-slide-active  .progress{
+    transition: 3100ms all linear;
+
+    width: 100%
+}
+
+
+// .insightdiv a:first-child{
+// background-color: red;}
+
+// Buttons
+.btn {
+    @apply transition duration-300  ease-in-out leading-relaxed inline-block whitespace-nowrap text-base font-medium cursor-pointer;
+
+    &:not(.btn-link) {
+        @apply  text-center;
+    }
+
+    &-primary {
+        @apply bg-primary border border-primary text-white xl:hover:bg-secondary xl:hover:text-white xl:hover:border-secondary;
+    }
+
+    &-secondary {
+        @apply bg-secondary border border-secondary text-white hover:bg-black hover:text-white hover:border-black;
+    }
+    &-dark{
+        @apply bg-[#000]  text-white hover:bg-black hover:text-white ;
+    }
+
+    &-outline-dark {
+      @apply border border-[1.5px] border-[#000] text-[#000] hover:bg-black hover:text-white hover:border-[transparent];
+    }
+
+    &-tab {
+        @apply bg-white text-black rounded-lg hover:bg-secondary border-white;
+
+        &.btn-active {
+            @apply bg-secondary text-white border-secondary;
+        }
+    }
+
+    &-outline-secondary {
+        @apply bg-transparent border border-[#BABABA] text-black hover:bg-black hover:text-white hover:border-black;
+    }
+
+    &-icon {
+        @apply flex items-center gap-x-2;
+
+        @include noTouchDevices {
+            &.hover-translate {
+                .icon {
+                    overflow:hidden;
+                    width:20px;
+                    height:20px;
+                    display:grid;
+                    place-items:center;
+                }
+
+                svg {
+                    @apply transition ease-in-out duration-300 gap-x-2;
+                }
+
+                &:hover {
+                    svg {
+                        // @apply translate-x-1 -translate-y-1;ps
+                        animation:arrow-top 0.5s ease 1 forwards;
+                    }
+                }
+            }
+
+            &.hover-translateX {
+                .icon {
+                    overflow:hidden;
+                    width:20px;
+                    height:20px;
+                    display:grid;
+                    place-items:center;
+                    transform:rotate(45deg)
+                }
+
+                svg {
+                    @apply transition ease-in-out duration-300 gap-x-2;
+                }
+
+                &:hover {
+                    svg {
+                        // @apply translate-x-1 -translate-y-1;ps
+                        animation:arrow-top 0.5s ease 1 forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes arrow-top {
+    0% {
+        transform:translate(0, 0);
+    }
+
+    50% {
+        transform:translate(100%, -100%);
+    }
+
+    51% {
+        transform:translate(-100%, 100%);
+    }
+
+    100% {
+        transform:translate(0, 0);
+    }
+}
+
+.container {
+    @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xxxl:max-w-[1332px];
+}
+
+.stretched-link {
+    @apply before:absolute before:w-full before:h-full before:top-0 before:left-0 before:z-10
+}
+
+.img-hover {
+    @apply transition duration-300 will-change-transform
+}
+
+
+.badge {
+    @apply inline-block text-[14px] bg-[#DAFF74] rounded-[100px] px-4 py-1
+}
+
+
+
+html.lenis {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+
+  .header{
+    transition: 0.3s all linear;
+    will-change: background-color,box-shadow,color,border-color;
+    border-bottom-width: 1px;
+    border-color: transparent;
+
+
+
+
+  }
+
+  .header.active{
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(172,172,172,0.25);
+    border-bottom-width: 1px;
+    border-color: rgba(172,172,172,0.25);
+    
+
+
+    .logoImg{
+        filter: invert(1);
+    }
+    .navitem,.navBtn{
+        color:#000;
+
+    }
+
+    .svg{
+        filter: invert(1);
+    }
+
+    .navitem:hover{
+        color:var(--secondary)
+    }
+    .navBtn{
+        border-color: #000;
+
+        &:hover{
+            background-color: #000;
+            color: #fff;
+            border-color: transparent;
+        }
+    }
+
+
+  }
+
