@@ -19,18 +19,16 @@ import { MdClose } from 'react-icons/md';
 import {
   Navigation,
   Pagination,
-  Mousewheel,
-  Keyboard,
   Autoplay,
-  FreeMode,
   Thumbs,
 } from "swiper/modules";
 import Image from "next/image";
 
 const HomeTestimonials = (props) => {
 
-
   const [showModal, setShowModal] = useState(false);
+  const[currentIndex,setCurrentIndex] = useState(0)
+  const swiperref = useRef(null);
   const lenis = useLenis();
 
   const handleclick = () => {
@@ -45,28 +43,13 @@ const HomeTestimonials = (props) => {
     showModal ? lenis?.stop() : lenis?.start()
   }, [showModal]);
 
-
-
-
-
-
-  const swiperref = useRef(null);
-
-
-
   useEffect(() => {
-    // // Get the delay value from the swiper
-    const delay = swiperref?.current?.swiper?.params?.autoplay?.delay || 0;
-  }, []);
-
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    swiperref?.current?.swiper?.slideTo(currentIndex)  
+  } ,[currentIndex]);
 
   return (
     <>
-
-
       <section className="xl:py-[126px] py-[50px] bg-[#FAFAFA]">
-
       <div
         className={`fixed z-50 overflow-y-auto top-0 w-full h-full left-0 ${
           showModal ? "show" : "hidden"
@@ -90,8 +73,6 @@ const HomeTestimonials = (props) => {
         </div>
       </div>
 
-
-
         <div className="container relative">
           <h6 className=" !text-[18px] font-medium mb-8 text-[#000]">
             Our Happy Customers
@@ -99,28 +80,17 @@ const HomeTestimonials = (props) => {
 
           <div className="flex flex-col lg:flex-row w-full">
             <div className={"w-full  lg:w-4/12"}>
+              <div className={'max-w-full lg:max-w-[343px]'}>
+
+              
               <Swiper
-                cssMode={true}
                 loop={true}
-                autoplay={{
-                  delay: 3500,
-                  disableOnInteraction: false,
-                }}
-                navigation={{
-                  prevEl: ".btn-prev",
-                  nextEl: ".btn-next",
-                  disabledClass: "opacity-50",
-                }}
-                thumbs={{ swiper: thumbsSwiper }}
-                mousewheel={true}
-                keyboard={true}
+                cssMode={true}
+
+
+               
                 modules={[
-                  Navigation,
-                  Mousewheel,
-                  Keyboard,
                   Autoplay,
-                  FreeMode,
-                  Thumbs,
                 ]}
                 ref={swiperref}
                 className="testimonialSwiper"
@@ -128,8 +98,8 @@ const HomeTestimonials = (props) => {
                 {props.data.map((slide, key) => {
                   return (
                     <SwiperSlide key={key}>
-                      <div className="flex flex-col lg:flex-row relative  ">
-                        <div className="w-full ">
+                      <div className="flex flex-col lg:flex-row relative   ">
+                        <div className="w-full">
                           <div className=" max-w-full lg:max-w-[343px] w-full">
                           <div className={`relative ${slide.isVideo ? "cursor-pointer" : ''}`} onClick={slide.isVideo ? handleclick : null}>
                               <figure className="testimonialimg ">
@@ -157,44 +127,43 @@ const HomeTestimonials = (props) => {
                   );
                 })}
               </Swiper>
+              </div>
             </div>
 
             <div className={"w-full  lg:w-8/12 "}>
               <Swiper
-                cssMode={true}
-                onSwiper={setThumbsSwiper}
-                freeMode={true}
                 loop={true}
+                onActiveIndexChange={(swiperCore) => {
+                  setCurrentIndex(swiperCore?.realIndex);
+                }}
+                draggable={true}
                 autoplay={{
                   delay: 3500,
                   disableOnInteraction: false,
                 }}
                 pagination={{
                   clickable: true,
-
                   el: ".bullet",
                   renderBullet: function (index, className) {
                     return (
-                      `<span className="bg-[#000000] w-2 h-2 rounded-full inline-block ${className}"></span>`
+                      `<span class="bg-[#000000] w-2 h-2 rounded-full inline-block ${className}"></span>`
                     );
                   },
                   bulletActiveClass: "!opacity-100",
-
                 }}
-                mousewheel={true}
-                keyboard={true}
+                navigation={{
+                  prevEl: ".btn-prev",
+                  nextEl: ".btn-next",
+                  disabledClass: "opacity-50",
+                }}
                 modules={[
                   Navigation,
                   Pagination,
-                  Mousewheel,
-                  Keyboard,
                   Autoplay,
-                  FreeMode,
-                  Thumbs,
                 ]}
                 className="testimonialSwiper h-full"
               >
-                <div className="wrap flex items-end w-full left-0 bottom-0  justify-between static mt-[18px] lg:mt-0   lg:absolute px-0 lg:px-[42px] z-20">
+                <div className="wrap flex items-end w-full left-0 bottom-0  justify-between relative mt-[18px] lg:mt-0   lg:absolute px-0 lg:px-[42px] z-20">
                   <div className=" bullet flex gap-6"></div>
 
                   <div className={"lg:flex gap-[18.5px]  hidden  "}>

@@ -40,7 +40,7 @@ const Footer = (props) => {
               {/* <input class="w-full bg-[#D9D9D917] outline-none shadow-none px-5 lg:px-6 py-3 tracking-[-0.3px] leading-[1] " placeholder="Email Address" autocomplete="off" type="email" id="formBasicEmail" name="email" value=""/> */}
 
               <Link
-                href=""
+                href="https://www.google.com" target={"_blank"}
                 className="btn absolute top-0 right-0 bg-secondary text-white h-full w-[114px] !text-[14px] font-medium tracking-[0.28px] !p-0 !flex justify-center items-center hover:bg-[#0ca2f0] "
               >
                 SUBMIT
@@ -77,7 +77,7 @@ const Footer = (props) => {
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="#"> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}{" "}
               </Accordion.Content>
@@ -108,7 +108,7 @@ const Footer = (props) => {
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="#"> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}{" "}
               </Accordion.Content>
@@ -140,7 +140,7 @@ const Footer = (props) => {
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="#"> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}{" "}
               </Accordion.Content>
@@ -173,7 +173,7 @@ const Footer = (props) => {
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="#"> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}{" "}
               </Accordion.Content>
@@ -193,7 +193,7 @@ const Footer = (props) => {
                     key={key}
                     className="text-[32px] font-light mb-[22px] leading-[100%] hover:text-[#C9C9C9]"
                   >
-                    <Link href="styleguide"> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}
               </ul>
@@ -210,7 +210,7 @@ const Footer = (props) => {
                       className="text-[#C9C9C9] hover:text-[#fff] tracking-[0.32px] mb-[13px]"
                     >
                       {" "}
-                      <Link href="#">{service.title} </Link>{" "}
+                      <Link href="https://www.google.com" target={"_blank"}>{service.title} </Link>{" "}
                     </li>
                   ))}
                 </ul>
@@ -226,7 +226,7 @@ const Footer = (props) => {
                       className="mb-[15px] text-[#C9C9C9] hover:text-[#fff]"
                     >
                       {" "}
-                      <Link href="#"> {other.title}</Link>{" "}
+                      <Link href="https://www.google.com" target={"_blank"}> {other.title}</Link>{" "}
                     </li>
                   ))}
                 </ul>
@@ -296,7 +296,7 @@ const Footer = (props) => {
                   </span>
 
                   <div className="flex gap-[36px]">
-                    <Link href="#">
+                    <Link href="https://www.google.com" target={"_blank"}>
                       <figure>
                         <svg
                           width="10"
@@ -314,7 +314,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.google.com" target={"_blank"}>
                       <figure>
                         <svg
                           width="20"
@@ -334,7 +334,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.google.com" target={"_blank"}>
                       <figure>
                         <svg
                           width="20"
@@ -352,7 +352,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.google.com" target={"_blank"}>
                       <figure>
                         <svg
                           width="23"
@@ -370,7 +370,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://www.google.com" target={"_blank"}>
                       <figure>
                         <svg
                           width="19"
@@ -402,17 +402,17 @@ const Footer = (props) => {
                 <Image width={9} height={17} src="/images/fb.svg" alt="logo" />
               </figure>
             </Link>
-            <Link href="#">
+            <Link href="https://www.google.com" target={"_blank"}>
               <figure>
                 <Image width={18} height={18}  src="/images/insta.svg" alt="logo" />
               </figure>
             </Link>
-            <Link href="#">
+            <Link href="https://www.google.com" target={"_blank"}>
               <figure>
                 <Image width={19} height={18}   src="/images/linkedin.svg" alt="logo" />
               </figure>
             </Link>
-            <Link href="#">
+            <Link href="https://www.google.com" target={"_blank"}>
               <figure>
                 <Image width={22} height={15}  src="/images/youtube.svg" alt="logo" />
               </figure>
@@ -425,7 +425,7 @@ const Footer = (props) => {
 
           <p className="!text-[14px] tracking-[0.28px] ">
             Designed by{" "}
-            <Link href="#">
+            <Link href="https://webandcrafts.com/" target={"_blank"}>
               {" "}
               <u className="text-underline-offset hover:text-secondary">
                 Webandcrafts

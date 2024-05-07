@@ -56,7 +56,7 @@ const HomeClients = () => {
                     <div className='max-w-[154px] w-full'>
                     <figure className="clientImg group transition-all duration-300 will-change-[opacity]">
                             <Image src="/images/alliance.svg" fill className='opacity-0 group-hover:opacity-100 transition-all duration-300 will-change-[opacity]'  alt="img" />
-                            <Image src="/images/alliance(bw).svg" fill className='opacity-100 group-hover:opacity-0 transition-all duration-300 will-change-[opacity] ' alt="img" />
+                            <Image src="/images/Alliance(bw).svg" fill className='opacity-100 group-hover:opacity-0 transition-all duration-300 will-change-[opacity] ' alt="img" />
 
 
                         </figure>
@@ -106,7 +106,7 @@ const HomeClients = () => {
                     <div className="px-[26px] xl:px-[30px] xxl:px-[66px] w-[calc(33.333%+1px)] lg:w-[20%] py-[36px] lg:py-[43px] border-[0.33px] border-[#EFEFEF] lg:border-0 -ms-px -mt-px lg:ms-0 lg:mt-0 ">
                     <div className='max-w-[154px] w-full'>
                     <figure className="clientImg group transition-all duration-300 will-change-[opacity]">
-                            <Image src="/images/airindia.svg" fill className='opacity-0 group-hover:opacity-100 transition-all duration-300 will-change-[opacity]'  alt="img" />
+                            <Image src="/images/airIndia.svg" fill className='opacity-0 group-hover:opacity-100 transition-all duration-300 will-change-[opacity]'  alt="img" />
                             <Image src="/images/airindia(bw).svg" fill className='opacity-100 group-hover:opacity-0 transition-all duration-300 will-change-[opacity] ' alt="img" />
 
 
@@ -207,7 +207,7 @@ const HomeClients = () => {
                 </div>
 
                 <div className="text-center mt-[56px] ">
-                    <Link href="#" className="btn btn-dark border border-transparent leading-[17px] tracking-[1.12px] !text-[14px] py-[17px] px-[26px] hover:!bg-[#fff] hover:!border-[#000] hover:!text-[#000] ">
+                    <Link href="https://www.google.com" target={"_blank"} className="btn btn-dark border border-transparent leading-[17px] tracking-[1.12px] !text-[14px] py-[17px] px-[26px] hover:!bg-[#fff] hover:!border-[#000] hover:!text-[#000] ">
                         BECOME A PARTNER
                     </Link>
                 </div>

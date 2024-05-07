@@ -27,6 +27,8 @@ const HomeServe = (props) => {
           opacity: 0,
         });
 
+ 
+
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: pinSection?.current,
@@ -163,7 +165,7 @@ const HomeServe = (props) => {
                       {serve.serveContent1}
                     </p>
                     <Link
-                      href="#"
+                      href="https://www.google.com" target={"_blank"}
                       className="btn btn-outline-dark w-full sm:w-max mt-[30px] xl:mt-[43px] !text-[14px] font-medium leading-[17px] tracking-[1.12px] inline-block px-[34px] py-[17px] "
                     >
                       LEARN MORE

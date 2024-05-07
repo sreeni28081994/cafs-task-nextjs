@@ -75,7 +75,7 @@ const HomeFeatures = (props) => {
 
 
                     <div className=" xxl:py-[24px] xxl:px-[18px] hidden xl:inline-block">
-                        <Link href="#" className="btn btn-secondary  leading-[17px] tracking-[1.12px] font-medium !text-[14px] px-[12px] py-[24px] w-[184px] h-[59px] !flex items-center justify-center">
+                        <Link href="https://www.google.com" target={"_blank"} className="btn btn-secondary  leading-[17px] tracking-[1.12px] font-medium !text-[14px] px-[12px] py-[24px] w-[184px] h-[59px] !flex items-center justify-center">
                             
                             EXPLORE
                         </Link>

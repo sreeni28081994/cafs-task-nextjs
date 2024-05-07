@@ -11,7 +11,7 @@ const MainHeader = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 50) {
         setstate(true)
       } else {
       setstate(false)
@@ -31,7 +31,7 @@ const MainHeader = () => {
         <div className="flex items-center justify-between py-4  ">
           <div className="logo text-white">
 
-            <Link href='#' className="wrap max-w-[96.523px] w-full ">
+            <Link href="/"  className="wrap max-w-[96.523px] w-full ">
 
               
 

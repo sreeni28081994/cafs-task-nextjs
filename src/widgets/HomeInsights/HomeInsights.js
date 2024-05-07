@@ -13,7 +13,7 @@ const HomeInsights = (props) => {
             </h2>
 
             <Link
-              href="#"
+              href="https://www.google.com" target={"_blank"}
               className="btn btn-secondary tracking-[1.12px] leading-[17px] !text-[14px] font-medium px-[34px] py-[17px] !hidden lg:!inline-block transition-all !duration-[400ms]"
             >
               EXPLORE INSIGHTS
@@ -25,14 +25,14 @@ const HomeInsights = (props) => {
             {props.data.map((insight,key)=>{  return(
 
                 
-            <Link href='#' key={key} className="group flex flex-col lg:flex-row gap-[17px] lg:gap-[62px] first:pt-0 lg:first:pt-[39px] pt-[32px] lg:pt-[39px] pb-[39px] border-b border-b-[#E1E1E1] first:border-t-[0px] lg:first:border-t first:border-t-[#E1E1E1]  ">
+            <Link href="https://www.google.com" target={"_blank"} key={key} className="group flex flex-col lg:flex-row gap-[17px] lg:gap-[62px] first:pt-0 lg:first:pt-[39px] pt-[32px] lg:pt-[39px] pb-[39px] border-b border-b-[#E1E1E1] first:border-t-[0px] lg:first:border-t first:border-t-[#E1E1E1]  ">
             <div className="lg:max-w-[307px] max-w-full w-full">
               <figure className="insightImg overflow-hidden">
                 <Image src={insight.imgURL} className={'group-hover:scale-[1.08] transition-all !duration-[400ms]'} alt="insight" fill  quality={80} sizes="(max-width: 768px) 100vw, 20vw"	/>
               </figure>
             </div>
 
-            <div className="flex flex-col justify-between items-start pt-[14px]">
+            <div className="flex flex-col justify-between items-start pt-[14px] flex-1">
               <span className="uppercase text-[#74899D] text-[12px] lg:text-[14px] tracking-[0.24px] lg:tracking-[0.28px] font-medium mb-[16px] lg:mb-0">
                 {insight.blog}
               </span>

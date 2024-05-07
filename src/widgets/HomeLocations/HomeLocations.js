@@ -79,7 +79,7 @@ var topValue = rect.top + window.scrollY;
                           {place.location}
                         </p>
                         <Link
-                          href="#"
+                          href="https://www.google.com" target={"_blank"}
                           className="text-[14px] leading-normal tracking-[0.28px] font-medium text-[#45B5F0]"
                         >
                           <u> {place.link.title}</u> 

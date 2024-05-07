@@ -20,7 +20,7 @@ const HomeWhoWeCare = (props) => {
     gsap.set(".bg-anim",{"backgroundSize":"0%"})
 
 
-    const animateBg = gsap.to(".bg-anim",{"backgroundSize":"100%",duration:2,ease:"sine.inOut"})
+    const animateBg = gsap.to(".bg-anim",{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
         
     ScrollTrigger.create({
       trigger: ".bg-anim",

@@ -67,7 +67,7 @@ const MobileNav = () => {
         </div>
 
         
-      <div className={'flex flex-col justify-between fixed mt-2  w-full '} style={{ height: 'calc(100vh - 80px)' }}>
+      <div className={'flex flex-col justify-between fixed overflow-y-scroll mt-2  w-full '} style={{ height: 'calc(100vh - 80px)' }}>
 
         
       <nav className="">
@@ -95,7 +95,7 @@ const MobileNav = () => {
         </nav>
 
 
-        <div class="mt-auto py-5 flex justify-center px-4">
+        <div className="mt-auto py-5 flex justify-center px-4">
 
 <Link href={headerNavLinks?.btn?.url} className=" flex justify-center bg-[#000000] w-full text-white text-[14px] leading-[17px]  font-medium  py-[16px] px-[25px] border border-[#fff]  hover:bg-[#fff] hover:text-[#000]  hover:border-[#000000]  transition-[0.3s] ease-linear">  {headerNavLinks?.btn?.title}</Link>  
 
