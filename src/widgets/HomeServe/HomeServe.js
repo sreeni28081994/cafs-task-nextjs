@@ -13,6 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const HomeServe = (props) => {
   const pinSection = useRef(null);
+  const progressBarRef = useRef(null);
 
   useGSAP(
     (self) => {
@@ -21,7 +22,7 @@ const HomeServe = (props) => {
         let left_c = self.selector(".left-inner");
         let img = self.selector(".photo");
         let inner_div = self.selector(".innerdiv");
-        let inner_divbase = self.selector(".innerdiv_base");
+        const inner_divbase = progressBarRef?.current;
 
         gsap.set(inner_divbase, {
           opacity: 0,
@@ -109,15 +110,16 @@ const HomeServe = (props) => {
         });
       }
     },
-    { scope: pinSection }
+    {dependencies :[progressBarRef?.current,pinSection?.current ], scope: pinSection }
   );
 
   return (
     <section className="    container relative base   " ref={pinSection}>
       <div
         className={
-          "w-[3.15px] h-[114.36px] hidden xl:block fixed top-[50%] right-3 z-40 bg-[#DEDEDE] innerdiv_base "
+          "w-[3.15px] h-[114.36px] hidden xl:block fixed top-[50%] right-3 z-40 bg-[#DEDEDE] innerdiv_base pointer-events-none opacity-0"
         }
+        ref={progressBarRef}
       >
         <div className={"w-full bg-[#000000] innerdiv"}></div>
       </div>

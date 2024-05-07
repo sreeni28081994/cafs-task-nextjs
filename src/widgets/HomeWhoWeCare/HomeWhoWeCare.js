@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CareComponent from "@/components/CareComponent";
 import Image from "next/image";
 import { useLenis } from "@studio-freight/react-lenis";
@@ -14,32 +14,30 @@ import { MdClose } from 'react-icons/md';
 
 const HomeWhoWeCare = (props) => {
 
-
-  // useGSAP((self)=>{
-
-  //   gsap.set(".bg-anim",{"backgroundSize":"0%"})
+  const bgAnimRef = useRef(null);
+  const wrapper = useRef(null);
 
 
-  //   const animateBg = gsap.to(".bg-anim",{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
+  useGSAP((self)=>{
+    const bgAnim = bgAnimRef?.current;
+
+    gsap.set(bgAnim,{"backgroundSize":"0%"})
+
+
+    const animateBg = gsap.to(bgAnim,{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
         
-  //   ScrollTrigger.create({
-  //     trigger: ".bg-anim",
-  //     start:"top bottom",
-  //     end:"+=100%",
-  //     animation: animateBg,
-      
-      
-  //   });
+    ScrollTrigger.create({
+      trigger: bgAnim,
+      start:"top bottom",
+      end:"+=100%",
+      animation: animateBg,
+    });
 
-    
+  },{dependencies :[wrapper.current, bgAnimRef?.current], scope: wrapper?.current}
 
 
 
-  // },{scope: ".HomeWhoWeCare"}
-
-
-
-  // )
+  )
 
 
 
@@ -60,7 +58,7 @@ const HomeWhoWeCare = (props) => {
   }, [showModal, lenis]);
 
   return (
-    <section data-widget="HomeWhoWeCare" className="bg-black HomeWhoWeCare">
+    <section data-widget="HomeWhoWeCare" className="bg-black" ref={wrapper}>
       <div className="container">
         <div className="flex justify-between flex-wrap  py-[16px]   xl:py-[90px] border-b border-b-[#FFFFFF33]">
           {props?.data.map((item, key) => {
@@ -76,6 +74,7 @@ const HomeWhoWeCare = (props) => {
           <h2
             className="bg-anim  text-[#fff]  !text-[32px] xl:!text-[45px] max-w-[1123px] !leading-[1.2] font-light title  [&>i]:tracking-[0px] bg-white  bg-[length:0%] bg-gradient-to-r from-[#45B5F0] to-[#ffffff] [&>i]:text-transparent bg-clip-text to-[70%] "
             style={{ backgroundSize: "100%" }}
+            ref={bgAnimRef}
           >
             <i className="text-white font-serief font-normal mr-[7px]">
               {props.topicItalic}
