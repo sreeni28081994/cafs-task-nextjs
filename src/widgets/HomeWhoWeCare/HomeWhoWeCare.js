@@ -85,7 +85,7 @@ const HomeWhoWeCare = (props) => {
 
           <Link
             href="https://www.google.com" target={"_blank"} aria-label={"details"}
-            className="md:flex gap-2 mt-[68px]  text-[16px] font-medium text-[#FFF] tracking-[0.32px] hidden hover:text-secondary transition-all duration-300 ease-in-out group "
+            className="md:flex gap-2 mt-[68px]  text-[16px] font-medium text-[#FFF] tracking-[0.32px] hidden hover:text-secondary transition-all duration-300 ease-in-out w-max group "
           >
             KNOW MORE ABOUT US
             <Image src="/images/arrow.svg" className={'group-hover:translate-x-1 '}  width={26} height={14} alt="img" />{" "}
