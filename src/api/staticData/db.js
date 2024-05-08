@@ -14,7 +14,7 @@ export const data = {
         "canonicalURL": null,
         "metaImage": {
           "url": {
-            "url": "/images/OGIMAGE.svg",
+            "url": "/images/OGIMAGE.png",
             "alternativeText": null
           },
           "alternativeText": null
