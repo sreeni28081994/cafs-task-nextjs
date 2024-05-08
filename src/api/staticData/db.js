@@ -14,7 +14,7 @@ export const data = {
         "canonicalURL": null,
         "metaImage": {
           "url": {
-            "url": "/images/OGIMAGE.png",
+            "url": "https://cafs-task-nextjs-667ia9iqd-sreeni28081994s-projects.vercel.app/images/OGIMAGE.png",
             "alternativeText": null
           },
           "alternativeText": null
