@@ -13,22 +13,19 @@ gsap.registerPlugin(ScrollTrigger);
 
 const HomeServe = (props) => {
   const pinSection = useRef(null);
-  const progressBarRef = useRef(null);
 
   useGSAP(
     (self) => {
-      const mediaQuery = gsap.matchMedia("(min-width: 992px)");
+      const mediaQuery = window.matchMedia("(min-width: 992px)");
       if (mediaQuery.matches) {
         let left_c = self.selector(".left-inner");
         let img = self.selector(".photo");
         let inner_div = self.selector(".innerdiv");
-        const inner_divbase = progressBarRef?.current;
+        let inner_divbase = self.selector(".innerdiv_base");
 
         gsap.set(inner_divbase, {
           opacity: 0,
         });
-
- 
 
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -110,16 +107,15 @@ const HomeServe = (props) => {
         });
       }
     },
-    {dependencies :[progressBarRef?.current,pinSection?.current ], scope: pinSection }
+    { scope: pinSection }
   );
 
   return (
     <section className="    container relative base   " ref={pinSection}>
       <div
         className={
-          "w-[3.15px] h-[114.36px] hidden xl:block fixed top-[50%] right-3 z-40 bg-[#DEDEDE] innerdiv_base pointer-events-none opacity-0"
+          "w-[3.15px] h-[114.36px] hidden xl:block fixed top-[50%] right-3 z-40 bg-[#DEDEDE] innerdiv_base "
         }
-        ref={progressBarRef}
       >
         <div className={"w-full bg-[#000000] innerdiv"}></div>
       </div>
@@ -167,7 +163,7 @@ const HomeServe = (props) => {
                       {serve.serveContent1}
                     </p>
                     <Link
-                      href="https://www.google.com" target={"_blank"}
+                      href="#"
                       className="btn btn-outline-dark w-full sm:w-max mt-[30px] xl:mt-[43px] !text-[14px] font-medium leading-[17px] tracking-[1.12px] inline-block px-[34px] py-[17px] "
                     >
                       LEARN MORE
