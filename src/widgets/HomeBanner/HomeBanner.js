@@ -19,7 +19,7 @@ const HomeBanner = (props) => {
           muted
           loop
           playsInline
-          poster="/images/poster.jpg"
+          poster="/images/posterImg.webp"
         />
       </div>
 

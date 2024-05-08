@@ -26,9 +26,9 @@ const Footer = (props) => {
           </div>
 
           <div className="  lg:max-w-[414px] w-full">
-            <h5 className="!text-[18px]  lg:!text-[20px]  ttl tracking-[0.36px] lg:tracking-[0.4px] text-white font-serief mb-5 font-normal">
+            <p className="!text-[18px]  lg:!text-[20px]  ttl tracking-[0.36px] lg:tracking-[0.4px] text-white font-serief mb-5 font-normal">
               Newsletter Subscription
-            </h5>
+            </p>
 
             <div className="relative h-[48px]    ">
               <input
@@ -41,6 +41,7 @@ const Footer = (props) => {
 
               <Link
                 href="https://www.google.com" target={"_blank"}
+                aria-label={"Submit"}
                 className="btn absolute top-0 right-0 bg-secondary text-white h-full w-[114px] !text-[14px] font-medium tracking-[0.28px] !p-0 !flex justify-center items-center hover:bg-[#0ca2f0] "
               >
                 SUBMIT
@@ -72,14 +73,17 @@ const Footer = (props) => {
               </Accordion.Title>
 
               <Accordion.Content className={"px-0 py-0"}>
+              <ul>
+
                 {FooterNavLinks.quicklinks.links.map((quicklink, key) => (
                   <li
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" aria-label={"Title"} target={"_blank"}> {quicklink.title}</Link>
                   </li>
-                ))}{" "}
+                ))}   </ul>
+
               </Accordion.Content>
               </div>
             </Accordion.Panel>
@@ -103,14 +107,18 @@ const Footer = (props) => {
                 {FooterNavLinks.services.title}
               </Accordion.Title>
               <Accordion.Content className={"px-0 py-0"}>
+              <ul>
+
                 {FooterNavLinks.services.links.map((quicklink, key) => (
                   <li
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
+                    <Link href="https://www.google.com" aria-label={"Sub-Title"} target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}{" "}
+              </ul>
+
               </Accordion.Content>
                 </div>
             </Accordion.Panel>
@@ -135,14 +143,18 @@ const Footer = (props) => {
                 {FooterNavLinks.locations.title}
               </Accordion.Title>
               <Accordion.Content className={"px-0 py-0"}>
+              <ul>
+
                 {FooterNavLinks.locations.links.map((quicklink, key) => (
                   <li
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
+                    <Link href="https://www.google.com"  aria-label={"Sub-Title"} target={"_blank"} > {quicklink.title}</Link>
                   </li>
                 ))}{" "}
+                </ul>
+
               </Accordion.Content>
 
               </div>
@@ -168,14 +180,18 @@ const Footer = (props) => {
                 {FooterNavLinks.others.title}
               </Accordion.Title>
               <Accordion.Content className={"px-0 py-0"}>
+              <ul>
+
                 {FooterNavLinks.others.links.map((quicklink, key) => (
                   <li
                     key={key}
                     className="text-[#fff] hover:text-[#fff] tracking-[0.36px] mb-[34px] list-none text-[18px] font-light"
                   >
-                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
+                    <Link href="https://www.google.com"  aria-label={"Sub-Title"} target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}{" "}
+                   </ul>
+
               </Accordion.Content>
               </div>
             </Accordion.Panel>
@@ -193,7 +209,7 @@ const Footer = (props) => {
                     key={key}
                     className="text-[32px] font-light mb-[22px] leading-[100%] hover:text-[#C9C9C9]"
                   >
-                    <Link href="https://www.google.com" target={"_blank"}> {quicklink.title}</Link>
+                    <Link href="https://www.google.com"  aria-label={"Sub-Title"} target={"_blank"}> {quicklink.title}</Link>
                   </li>
                 ))}
               </ul>
@@ -210,7 +226,7 @@ const Footer = (props) => {
                       className="text-[#C9C9C9] hover:text-[#fff] tracking-[0.32px] mb-[13px]"
                     >
                       {" "}
-                      <Link href="https://www.google.com" target={"_blank"}>{service.title} </Link>{" "}
+                      <Link href="https://www.google.com"  aria-label={"Sub-Title"} target={"_blank"}>{service.title} </Link>{" "}
                     </li>
                   ))}
                 </ul>
@@ -244,12 +260,12 @@ const Footer = (props) => {
                       className="mb-[15px] text-[#C9C9C9] hover:text-[#fff]"
                     >
                       {" "}
-                      <Link href="#">{location.title} </Link>{" "}
+                      <Link href="#"  aria-label={"Sub-Title"}>{location.title} </Link>{" "}
                     </li>
                   ))}
 
                   <li className="text-[#C9C9C9] hover:text-[#fff]">
-                    <Link href="#">
+                    <Link href="#"  aria-label={"Sub-Title"}>
                       {" "}
                       <u className="text-underline-offset">+3 More</u>
                     </Link>{" "}
@@ -272,6 +288,7 @@ const Footer = (props) => {
                   <Link
                     href="tel:+911800123445"
                     className="tracking-[0.36px] text-[18px] hover:text-secondary"
+                    aria-label={"Phone-number"}
                   >
                     +91 1800 1234 45
                   </Link>
@@ -285,6 +302,7 @@ const Footer = (props) => {
                   <Link
                     href="mailto:info@cafs.in"
                     className="tracking-[0.36px] text-[18px] hover:text-secondary"
+                    aria-label={"Mail-id"}
                   >
                     info@cafs.in
                   </Link>
@@ -296,7 +314,7 @@ const Footer = (props) => {
                   </span>
 
                   <div className="flex gap-[36px]">
-                    <Link href="https://www.google.com" target={"_blank"}>
+                    <Link href="https://www.google.com" target={"_blank"} aria-label={"social-media"}>
                       <figure>
                         <svg
                           width="10"
@@ -314,7 +332,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="https://www.google.com" target={"_blank"}>
+                    <Link href="https://www.google.com" target={"_blank"}  aria-label={"social-media"}>
                       <figure>
                         <svg
                           width="20"
@@ -334,7 +352,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="https://www.google.com" target={"_blank"}>
+                    <Link href="https://www.google.com" target={"_blank"}  aria-label={"social-media"}>
                       <figure>
                         <svg
                           width="20"
@@ -352,7 +370,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="https://www.google.com" target={"_blank"}>
+                    <Link href="https://www.google.com" target={"_blank"}  aria-label={"social-media"}>
                       <figure>
                         <svg
                           width="23"
@@ -370,7 +388,7 @@ const Footer = (props) => {
                         </svg>
                       </figure>
                     </Link>
-                    <Link href="https://www.google.com" target={"_blank"}>
+                    <Link href="https://www.google.com" target={"_blank"}  aria-label={"social-media"}>
                       <figure>
                         <svg
                           width="19"
@@ -399,20 +417,20 @@ const Footer = (props) => {
           <div className="flex items-center gap-[36px] pb-[40px] lg:hidden">
             <Link href="https://www.google.com" target={"_blank"}>
               <figure>
-                <Image width={9} height={17} src="/images/fb.svg" alt="logo" />
+                <Image width={9} height={17} src="/images/fb.svg"  aria-label={"fb"} alt="logo" />
               </figure>
             </Link>
-            <Link href="https://www.google.com" target={"_blank"}>
+            <Link href="https://www.google.com"  aria-label={"insta"} target={"_blank"}>
               <figure>
                 <Image width={18} height={18}  src="/images/insta.svg" alt="logo" />
               </figure>
             </Link>
-            <Link href="https://www.google.com" target={"_blank"}>
+            <Link href="https://www.google.com"  aria-label={"Linked-in"} target={"_blank"}>
               <figure>
                 <Image width={19} height={18}   src="/images/linkedin.svg" alt="logo" />
               </figure>
             </Link>
-            <Link href="https://www.google.com" target={"_blank"}>
+            <Link href="https://www.google.com"  aria-label={"You-Tube"} target={"_blank"}>
               <figure>
                 <Image width={22} height={15}  src="/images/youtube.svg" alt="logo" />
               </figure>
@@ -425,7 +443,7 @@ const Footer = (props) => {
 
           <p className="!text-[14px] tracking-[0.28px] ">
             Designed by{" "}
-            <Link href="https://webandcrafts.com/" target={"_blank"}>
+            <Link href="https://webandcrafts.com/"  aria-label={"WAC"} target={"_blank"}>
               {" "}
               <u className="text-underline-offset hover:text-secondary">
                 Webandcrafts

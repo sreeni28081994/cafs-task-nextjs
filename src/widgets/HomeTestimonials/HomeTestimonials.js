@@ -46,11 +46,10 @@ const HomeTestimonials = (props) => {
         className={`fixed z-50 overflow-y-auto top-0 w-full h-full left-0 ${
           showModal ? "show" : "hidden"
         }`}
-        id="modal"
       >
         <div className={"flex w-full h-full justify-center items-center bg-[#00000069] "}>
           <div className={"max-w-[754px] w-full relative"}>
-          <button className={`w-10 h-10 absolute right-0 top-0 bg-white font-bold text-black z-10 flex justify-center items-center  `} onClick={()=>handleClose()}> <MdClose size={24}/>   </button>
+          <button className={`w-10 h-10 absolute right-0 top-0 bg-white font-bold text-black z-10 flex justify-center items-center  `} aria-label={"close"} onClick={()=>handleClose()}> <MdClose size={24}/>   </button>
 
             <figure className="popupVideo">
               <video
@@ -66,9 +65,9 @@ const HomeTestimonials = (props) => {
       </div>
 
         <div className="container relative">
-          <h6 className=" !text-[18px] font-medium mb-8 text-[#000]">
+          <p className=" !text-[18px] font-medium mb-8 text-[#000]">
             Our Happy Customers
-          </h6>
+          </p>
 
           <div className="flex flex-col lg:flex-row w-full">
             <div className={"w-full  lg:w-4/12"}>
@@ -99,16 +98,18 @@ const HomeTestimonials = (props) => {
                                   src={slide.imgURL}
                                   fill
                                   alt="testimonial"
+                                  quality={80} sizes="(max-width: 992px) 95vw,(max-width: 1200px) 40vw, 30vw"
+
                                 />
                               </figure>
 
                               <div className="absolute bottom-0 left-0 h-[2.62px] transition-all progress bg-[#000000]"></div>
                             </div>
 
-                            <h4 className=" !text-[24px] lg:!text-[28px] font-normal tracking-[0.48px] lg:tracking-[0.56px] leading-normal font-serief mt-[22px] lg:mt-10">
+                            <p className=" !text-[24px] lg:!text-[28px] font-normal tracking-[0.48px] lg:tracking-[0.56px] leading-normal font-serief mt-[22px] lg:mt-10">
                               {" "}
                               <i> {slide.name}</i>
-                            </h4>
+                            </p>
                             <p className="!text-[14px] tracking-[0.28px] text-[#000] mt-[12px] lg:mt-[3px]">
                               {slide.position}
                             </p>
@@ -159,7 +160,7 @@ const HomeTestimonials = (props) => {
                   <div className=" bullet flex gap-6"></div>
 
                   <div className={"lg:flex gap-[18.5px]  hidden  "}>
-                    <button className="btn-prev transition-all duration-300 group">
+                    <button className="btn-prev transition-all duration-300 group" aria-label={"Left-arrow"}>
                       <svg
                         width="86"
                         height="51"
@@ -200,7 +201,7 @@ const HomeTestimonials = (props) => {
                       </svg>
                     </button>
 
-                    <button className={"btn-next group"}>
+                    <button className={"btn-next group"} aria-label={"Right-Arrow"}>
                       <svg
                         width="86"
                         height="51"

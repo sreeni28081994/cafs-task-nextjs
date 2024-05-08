@@ -107,9 +107,9 @@ var rect = element.getBoundingClientRect();
 
       <div className="container">
         <div>
-          <h6 className="text-white !text-[16px] xl:!text-[18px] tracking-[0.32px] xl:tracking-[0.36px] font-normal leading-normal">
+          <p className="text-white !text-[16px] xl:!text-[18px] tracking-[0.32px] xl:tracking-[0.36px] font-normal leading-normal">
             Our Locations
-          </h6>
+          </p>
 
           <div className="flex flex-col mt-[22px]">
             <div className=" max-w-[445px] lg:max-w-[550px] xl:max-w-[445px]  xxxl:max-w-[705px]">

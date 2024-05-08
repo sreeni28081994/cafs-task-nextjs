@@ -1,5 +1,6 @@
 
 "use client"
+import Image from "next/image";
 import React from "react";
 const CardComponent = ({number}) => {
   return (
@@ -15,7 +16,7 @@ const CardComponent = ({number}) => {
 
         <div>
 
-            <h4 className='max-w-[385px]  !text-[28px] xl:!text-[32px] leading-[120%] tracking-[-0.56px]  xl:tracking-[-0.64px] mb-[8px] xl:mb-[24px]'>{number.title}</h4>
+            <p className='max-w-[385px]  !text-[28px] xl:!text-[32px] leading-[120%] tracking-[-0.56px]  xl:tracking-[-0.64px] mb-[8px] xl:mb-[24px]'>{number.title}</p>
 
             <p className='max-w-[430px] !text-[16px] xl:!text-[20px] leading-[150%] xl:leading-normal' >{number.subtitle}</p>
 
@@ -26,7 +27,7 @@ const CardComponent = ({number}) => {
         <div className=' w-[238.38px]  xl:w-[375px] mask absolute top-[28px] right-[40px] xl:top-[48px] xl:right-[43px]'>
 
           <figure className='featureimg '>
-            <img src={number.imgURL} alt="img" />
+            <Image src={number.imgURL} alt="img" fill quality={80} sizes="(max-width: 992px) 80vw,(max-width: 1200px) 50vw, 40vw"/>
           </figure>
 
 

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import headerNavLinks from "src/api/staticData/headerNavLinks";
 import Style from "./Header.module.scss";
+import Image from "next/image";
 const MobileNav = () => {
   const [navShow, setNavShow] = useState(false);
 
@@ -41,7 +42,7 @@ const MobileNav = () => {
 
           <div>
             <figure>
-              <img src="/images/logo-sm.svg" alt="logo" />
+              <Image src="/images/logo-sm.svg" width={100} height={29} alt="logo" />
             </figure>
           </div>
 

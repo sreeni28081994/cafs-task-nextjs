@@ -37,13 +37,13 @@ const HomeInsights = (props) => {
                 {insight.blog}
               </span>
 
-              <h5 className="text-[20px] lg:text-[16px] xl:text-[24px] font-normal ttl leading-normal text-[#000000]  mb-[24px] lg:mb-0 line-clamp-2 line">
+              <p className="!text-[20px] lg:!text-[16px] xl:!text-[24px] font-normal ttl leading-normal text-[#000000]  mb-[24px] lg:mb-0 line-clamp-2 line">
           {insight.title}
-              </h5>
+              </p>
 
-              <button className=" group-hover:bg-secondary group-hover:text-white  py-[5px] px-[12px] lg:px-[19px] text-[14px]  xl:text-[18px] leading-normal rounded-[78px] border-[1px] border-[#D9D9D9] font-normal text-[#000] flex items-center justify-center transition-all !duration-[400ms]">
+              <div className=" group-hover:bg-secondary group-hover:text-white  py-[5px] px-[12px] lg:px-[19px] text-[14px]  xl:text-[18px] leading-normal rounded-[78px] border-[1px] border-[#D9D9D9] font-normal text-[#000] flex items-center justify-center transition-all !duration-[400ms]">
                 {insight.btnttl}
-              </button>
+              </div>
             </div>
           </Link>
 

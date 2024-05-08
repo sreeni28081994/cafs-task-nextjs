@@ -154,6 +154,7 @@ const HomeServe = (props) => {
                         alt="serveImg"
                         className="w-full h-full object-cover"
                         fill
+                       quality={80} sizes="(max-width: 991px) 100vw, 60vw"
                       />
                     </figure>
                   </div>
@@ -182,6 +183,8 @@ const HomeServe = (props) => {
                   alt="serveImg"
                   className="w-full h-full object-cover"
                   fill
+                  quality={80} sizes="(max-width: 991px) 100vw, 50vw"
+
                 />
               </figure>
               <figure className="relative lg:absolute  left-0 top-0 photo w-full h-full serveFigure transition-all duration-300    ">
@@ -190,6 +193,8 @@ const HomeServe = (props) => {
                   alt="serveImg"
                   className="w-full h-full object-cover"
                   fill
+                  quality={80} sizes="(max-width: 991px) 100vw, 50vw"
+
                 />
               </figure>
               <figure className="relative lg:absolute  left-0 top-0 photo w-full h-full serveFigure transition-all duration-300 ">
@@ -198,6 +203,8 @@ const HomeServe = (props) => {
                   alt="serveImg"
                   className="w-full h-full object-cover"
                   fill
+                  quality={80} sizes="(max-width: 991px) 100vw, 50vw"
+
                 />
               </figure>
             </div>

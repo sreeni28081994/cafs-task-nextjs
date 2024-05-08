@@ -119,18 +119,18 @@ const HomeWhoWeCare = (props) => {
           </div>
 
           <div className="text-white max-w-full lg:max-w-[264px] l flex flex-col gap-4 mb-[36px] xl:mb-0">
-            <h5 className="!text-[22px] font-normal  tracking-[0.44px] ">
+            <p className="!text-[22px] font-normal  tracking-[0.44px] ">
               We Deliver
-            </h5>
+            </p>
             <p className=" text-[#B0B3BF] !text-[18px]  lg:!text-[16px] leading-[160%]">
               {props.deliver}
             </p>
           </div>
 
           <div className="text-white max-w-full lg:max-w-[264px] flex flex-col gap-4">
-            <h5 className="!text-[22px] font-normal  tracking-[0.44px] ">
+            <p className="!text-[22px] font-normal  tracking-[0.44px] ">
               We Ensure
-            </h5>
+            </p>
             <p className=" text-[#B0B3BF] !text-[18px]  lg:!text-[16px] leading-[160%]">
               {props.ensure}
             </p>
@@ -150,7 +150,6 @@ const HomeWhoWeCare = (props) => {
         className={`fixed z-50 overflow-y-auto top-0 w-full h-full left-0 ${
           showModal ? "show" : "hidden"
         }`}
-        id="modal"
       >
         <div className={"flex w-full h-full justify-center items-center bg-[#00000069]"}>
           <div className={"max-w-[754px] w-full relative "}>
