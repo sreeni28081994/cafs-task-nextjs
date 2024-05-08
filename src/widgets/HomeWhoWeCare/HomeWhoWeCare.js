@@ -7,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MdClose } from 'react-icons/md';
+import Link from "next/link";
 
 
 
@@ -82,13 +83,13 @@ const HomeWhoWeCare = (props) => {
             {props.topic}
           </h2>
 
-          <a
-            href="#"
-            className="md:flex gap-2 mt-[68px]  text-[16px] font-medium text-[#FFF] tracking-[0.32px] hidden "
+          <Link
+            href="https://www.google.com" target={"_blank"} aria-label={"details"}
+            className="md:flex gap-2 mt-[68px]  text-[16px] font-medium text-[#FFF] tracking-[0.32px] hidden hover:text-secondary transition-all duration-300 ease-in-out group "
           >
-            KNOW MORE ABOUT US{" "}
-            <Image src="/images/arrow.svg" width={26} height={14} alt="img" />{" "}
-          </a>
+            KNOW MORE ABOUT US
+            <Image src="/images/arrow.svg" className={'group-hover:translate-x-1 '}  width={26} height={14} alt="img" />{" "}
+          </Link>
         </div>
 
         <div className="block lg:flex lg:gap-[40px] xl:gap-[63px] justify-end pt-0 lg:pt-[70px] pb-[48px] xl:pb-[138px] flex-col lg:flex-row">
