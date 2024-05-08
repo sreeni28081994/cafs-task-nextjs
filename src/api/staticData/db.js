@@ -5,7 +5,7 @@ export const data = {
         "id": 5,
         "metaTitle": "Freshness and Quality - CAFS",
         
-        "metaDescription": "Excelledia is a prominent business process improvement and performance management consulting firm that helps businesses become more profitable.",
+        "metaDescription": "Freshness and Quality - CAFS",
         "metaOgImage": "",
         "keywords": null,
         "metaRobots": null,
@@ -14,7 +14,7 @@ export const data = {
         "canonicalURL": null,
         "metaImage": {
           "url": {
-            "url": "https://admin.excelledia.webc.in/uploads/OG_IMAGE_1_61fccf82b8.png",
+            "url": "/images/OGIMAGE.svg",
             "alternativeText": null
           },
           "alternativeText": null
