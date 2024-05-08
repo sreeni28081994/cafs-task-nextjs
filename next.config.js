@@ -3,7 +3,7 @@ const apiUrl = process.env.API_URL;
 
 const nextConfig = {
   images: {
-    domains: ["localhost", "admin.cafs.webc.in"],
+    domains: ["localhost", "admin.cafs.webc.in", "cafs-task-nextjs.vercel.app"],
 },
 env: {
     NEXT_PUBLIC_API_ENDPOINT: apiUrl,
