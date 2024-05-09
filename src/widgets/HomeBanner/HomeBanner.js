@@ -17,11 +17,11 @@ const HomeBanner = (props) => {
 
       const title1=self?.selector(".title1")
  
-      gsap.set(title1,{
-        opacity:0,
-        y:50
+      // gsap.set(title1,{
+      //   opacity:0,
+      //   y:50
 
-      })
+      // })
 
       const tl=gsap.timeline();
       tl.to(title1, {y:0,opacity:1,stagger:0.1,duration:0.6,});

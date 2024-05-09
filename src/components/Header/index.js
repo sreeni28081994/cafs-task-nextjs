@@ -15,10 +15,10 @@ const MainHeader = () => {
     (self) => {
       const header = self?.selector(".anim_header");
 
-      gsap.set(header, {
-        opacity: 0,
-        y: -50,
-      });
+      // gsap.set(header, {
+      //   opacity: 0,
+      //   y: -50,
+      // });
 
       const tl1 = gsap.timeline();
       tl1.to(header, { y: 0, opacity: 1, duration: 0.6,delay:0.1 });
@@ -47,7 +47,7 @@ const MainHeader = () => {
     >
       <div className="container m-auto px-4">
         <div className="flex items-center justify-between py-4  ">
-            <div className="logo text-white anim_header">
+            <div className="logo text-white anim_header -translate-y-12 opacity-0">
               <Link href="/" className="wrap max-w-[96.523px] w-full ">
                 <figure className="logoImg w-[96.523px] ">
                   <Image
