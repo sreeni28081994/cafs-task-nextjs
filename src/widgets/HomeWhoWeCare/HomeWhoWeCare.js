@@ -61,7 +61,7 @@ const HomeWhoWeCare = (props) => {
   return (
     <section data-widget="HomeWhoWeCare" className="bg-black" ref={wrapper}>
       <div className="container">
-        <div className="flex justify-between flex-wrap  py-[16px]   xl:py-[90px] border-b border-b-[#FFFFFF33]">
+        <div className="flex justify-between flex-wrap  py-4   xl:py-[90px] border-b border-b-[#FFFFFF33]">
           {props?.data.map((item, key) => {
             return <CareComponent data={item} key={key} />;
           })}

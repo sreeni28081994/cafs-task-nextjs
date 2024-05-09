@@ -113,6 +113,7 @@ module.exports = {
     boxShadow,
     container,
     screens: {
+      xxs:{max:"350px"},
       xs: { max: "576px" },
       sm: "576px",
       md: "768px",
@@ -129,9 +130,10 @@ module.exports = {
       fontFamily: {
         sans: ['var(--sans)', 'sans-serif'],
         serief: ['var(--serief)', 'sans-serif'],
-          
-
       },
+      height:{
+        "sreeni":"25px"
+      }
     },
   },
   plugins: [

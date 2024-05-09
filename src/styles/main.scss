@@ -58,7 +58,7 @@ $base-size:16;
         h1,
         .h1 {
             &:not(.ttl) {
-                @apply text-[40px] sm:text-[40px] lg:text-[60px] xxxl:text-h1;
+                @apply  xs:text-[65px] sm:text-[85px] lg:text-[120px] xxxl:text-[200px];
             }
         }
 
