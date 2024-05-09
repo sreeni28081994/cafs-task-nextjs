@@ -61,7 +61,7 @@ const MainHeader = () => {
               </Link>
             </div>
 
-            <div className="flex items-center leading-5  anim_header">
+            <div className="flex items-center leading-5  anim_header -translate-y-12 opacity-0">
               <NavLinks />
             </div>
 
