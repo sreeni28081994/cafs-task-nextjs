@@ -26,6 +26,8 @@ const HomeServe = (props) => {
 
         gsap.set(inner_divbase, {
           opacity: 0,
+          
+
         });
 
         const tl = gsap.timeline({

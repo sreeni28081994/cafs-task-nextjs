@@ -21,7 +21,7 @@ const MainHeader = () => {
       });
 
       const tl1 = gsap.timeline();
-      tl1.to(header, { y: 0, opacity: 1, duration: 0.6 });
+      tl1.to(header, { y: 0, opacity: 1, duration: 0.6,delay:0.1 });
     },
     { scope: outerSection }
   );
