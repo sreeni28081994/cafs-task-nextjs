@@ -19,7 +19,7 @@ const HomeBanner = (props) => {
  
       gsap.set(title1,{
         opacity:0,
-        y:100
+        y:50
 
       })
 

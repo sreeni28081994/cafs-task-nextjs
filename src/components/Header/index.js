@@ -17,7 +17,7 @@ const MainHeader = () => {
 
       gsap.set(header, {
         opacity: 0,
-        y: -100,
+        y: -50,
       });
 
       const tl1 = gsap.timeline();
