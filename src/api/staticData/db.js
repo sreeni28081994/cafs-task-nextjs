@@ -25,7 +25,7 @@ export const data = {
         {
           "widget_type": "HomeBanner",
           "data": {
-            "title": "<span className='title1 inline-block translate-y-12 opacity-0'> Elevating </span> <span className='title1 inline-block translate-y-12 opacity-0'>  Sky <i className='font-serief tracking-[0px] '> Dining </i> </span><span className='title1 inline-block translate-y-12 opacity-0'> Experience</span>"
+            "title": "<span className='title1 inline-block  opacity-0'> Elevating </span> <span className='title1 inline-block '>  Sky <i className='font-serief tracking-[0px] '> Dining </i> </span><span className='title1 inline-block'> Experience</span>"
     
           }
         },

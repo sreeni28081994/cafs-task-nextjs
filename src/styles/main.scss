@@ -390,3 +390,17 @@ html.lenis {
         }
     }
 }
+
+
+
+/*gsap */
+.title1{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.anim_header{
+    transform: translateY(-50px);
+    opacity: 0;
+
+}

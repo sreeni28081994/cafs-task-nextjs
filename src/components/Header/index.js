@@ -47,7 +47,7 @@ const MainHeader = () => {
     >
       <div className="container m-auto px-4">
         <div className="flex items-center justify-between py-4  ">
-            <div className="logo text-white anim_header -translate-y-12 opacity-0">
+            <div className="logo text-white anim_header ">
               <Link href="/" className="wrap max-w-[96.523px] w-full ">
                 <figure className="logoImg w-[96.523px] ">
                   <Image
@@ -61,7 +61,7 @@ const MainHeader = () => {
               </Link>
             </div>
 
-            <div className="flex items-center leading-5  anim_header -translate-y-12 opacity-0">
+            <div className="flex items-center leading-5  anim_header ">
               <NavLinks />
             </div>
 
