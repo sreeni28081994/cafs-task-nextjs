@@ -25,7 +25,7 @@ const MobileNav = () => {
       <button
         aria-label="Toggle Menu"
         onClick={onToggleNav}
-        className={`xl:hidden ${Style.mobMenuBtn}`}
+        className={`xl:hidden ${Style.mobMenuBtn} anim_header`}
       >
 
 

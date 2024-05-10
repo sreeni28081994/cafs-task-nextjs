@@ -7,7 +7,6 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-// import Style from "./Header.module.scss";
 const MainHeader = () => {
   const outerSection = useRef(null);
 
@@ -15,17 +14,11 @@ const MainHeader = () => {
     (self) => {
       const header = self?.selector(".anim_header");
 
-      // gsap.set(header, {
-      //   opacity: 0,
-      //   y: -50,
-      // });
-
       const tl1 = gsap.timeline();
-      tl1.to(header, { y: 0, opacity: 1, duration: 0.6,delay:0.1 });
+      tl1.to(header, { y: 0, opacity: 1, duration: 0.6, delay: 0.1 });
     },
     { scope: outerSection }
   );
-
   const [state, setstate] = useState(false);
 
   useEffect(() => {
@@ -47,25 +40,25 @@ const MainHeader = () => {
     >
       <div className="container m-auto px-4">
         <div className="flex items-center justify-between py-4  ">
-            <div className="logo text-white anim_header ">
-              <Link href="/" className="wrap max-w-[96.523px] w-full ">
-                <figure className="logoImg w-[96.523px] ">
-                  <Image
-                    src={"/images/CAFS.svg"}
-                    width={100}
-                    height={29}
-                    alt={"CAFS"}
-                    loading={"eager"}
-                  />
-                </figure>
-              </Link>
-            </div>
+          <div className="logo text-white anim_header ">
+            <Link href="/" className="wrap max-w-[96.523px] w-full ">
+              <figure className="logoImg w-[96.523px] ">
+                <Image
+                  src={"/images/CAFS.svg"}
+                  width={100}
+                  height={29}
+                  alt={"CAFS"}
+                  loading={"eager"}
+                />
+              </figure>
+            </Link>
+          </div>
 
-            <div className="flex items-center leading-5  anim_header ">
-              <NavLinks />
-            </div>
+          <div className="flex items-center leading-5  anim_header ">
+            <NavLinks />
+          </div>
 
-          <MobileNav />
+          <MobileNav  />
         </div>
       </div>
     </header>
@@ -73,3 +66,4 @@ const MainHeader = () => {
 };
 
 export default MainHeader;
+
