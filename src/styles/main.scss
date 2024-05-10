@@ -358,6 +358,7 @@ html.lenis {
     will-change: background-color,box-shadow,color,border-color;
     border-bottom-width: 1px;
     border-color: transparent;
+    transform: translateY(0);
   }
 
   .header.active{
@@ -365,6 +366,17 @@ html.lenis {
     box-shadow: 0 1px 0 0 rgba(172,172,172,0.25);
     border-bottom-width: 1px;
     border-color: rgba(172,172,172,0.25);
+    animation: animate 0.6s ease-in-out 0s ;
+
+    @keyframes animate {
+        0%{
+            transform: translateY(-100px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+        
+    }
 
     .logoImg{
         filter: invert(1);

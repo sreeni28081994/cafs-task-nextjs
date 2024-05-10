@@ -21,26 +21,26 @@ const HomeWhoWeCare = (props) => {
   const wrapper = useRef(null);
 
 
-  useGSAP((self)=>{
-    const bgAnim = bgAnimRef?.current;
+  // useGSAP((self)=>{
+  //   const bgAnim = bgAnimRef?.current;
 
-    gsap.set(bgAnim,{"backgroundSize":"0%"})
+  //   gsap.set(bgAnim,{"backgroundSize":"0%"})
 
 
-    const animateBg = gsap.to(bgAnim,{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
+  //   const animateBg = gsap.to(bgAnim,{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
         
-    ScrollTrigger.create({
-      trigger: bgAnim,
-      start:"top bottom",
-      end:"+=100%",
-      animation: animateBg,
-    });
+  //   ScrollTrigger.create({
+  //     trigger: bgAnim,
+  //     start:"top bottom",
+  //     end:"+=100%",
+  //     animation: animateBg,
+  //   });
 
-  },{dependencies :[wrapper.current, bgAnimRef?.current], scope: wrapper?.current}
+  // },{dependencies :[wrapper.current, bgAnimRef?.current], scope: wrapper?.current}
 
 
 
-  )
+  // )
 
 
 
