@@ -34,23 +34,31 @@ export const data = {
           "data": [{
             "url":"/images/care_logo_3.svg",
             "number": 50,
-            "content":"Years of Experience"
+            "content":"Years of Experience",
+            "plus":true
           },
           {
             "url":"/images/care_logo_1.svg",
 
             "number": 2100,
-            "content":"Employees"
+            "content":"Employees",
+            "plus":true
+
+            
           },{
             "url":"/images/care_logo_2.svg",
 
             "number": 11,
-            "content":"Locations"
+            "content":"Locations",
+            "plus":false
+
           },{
             "url":"/images/care_logo_4.svg",
 
             "number": 50,
-            "content":"Premium Clients"
+            "content":"Premium Clients",
+            "plus":true
+
           }
         
         
