@@ -49,7 +49,7 @@ const CareComponent = ({data}) => {
           
           <img src={data.url} alt="img" width={44} height={44} className='w-full h-full ' />
         </figure>
-        <div className="flex flex-col gap-0  xl:gap-[5px]">
+        <div className="flex flex-col gap-0  xl:gap-[13px]">
           <div>
            <CountUp   start={0} end={isCounting ? data.number : 0} separator="" useEasing={false} duration={1} className='text-white text-[42px] xl:text-[48px] tracking-[0.84px] xl:tracking-[0.96px] ' /> <span className='text-white text-[42px] xl:text-[48px] tracking-[0.84px] xl:tracking-[0.96px] '>{data.plus ? "+" : ""}  </span> </div>
             <span className='text-[#8C8C8C] text-[22px] xl:text-[24px] leading-[100%]'>{data.content}</span>
