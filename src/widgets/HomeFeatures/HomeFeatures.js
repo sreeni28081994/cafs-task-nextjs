@@ -27,7 +27,7 @@ const HomeFeatures = (props) => {
         const amounttoScroll = boxes.offsetWidth - containerWidth;
 
         const tween = gsap.to(boxes, {
-          x: -amounttoScroll + "px",
+          x: -(amounttoScroll + 100) + "px",
           duration: 5,
           ease: "linear",
         });
