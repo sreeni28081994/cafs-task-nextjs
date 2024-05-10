@@ -33,23 +33,23 @@ export const data = {
           "widget_type": "HomeWhoWeCare",
           "data": [{
             "url":"/images/care_logo_3.svg",
-            "number": "50+",
+            "number": 50,
             "content":"Years of Experience"
           },
           {
             "url":"/images/care_logo_1.svg",
 
-            "number": "2100+",
+            "number": 2100,
             "content":"Employees"
           },{
             "url":"/images/care_logo_2.svg",
 
-            "number": "11     ",
+            "number": 11,
             "content":"Locations"
           },{
             "url":"/images/care_logo_4.svg",
 
-            "number": "50+",
+            "number": 50,
             "content":"Premium Clients"
           }
         
