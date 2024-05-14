@@ -19,32 +19,7 @@ const HomeWhoWeCare = (props) => {
 
   const bgAnimRef = useRef(null);
   const wrapper = useRef(null);
-
-
-  // useGSAP((self)=>{
-  //   const bgAnim = bgAnimRef?.current;
-
-  //   gsap.set(bgAnim,{"backgroundSize":"0%"})
-
-
-  //   const animateBg = gsap.to(bgAnim,{"backgroundSize":"100%",duration:1,ease:"sine.inOut"})
-        
-  //   ScrollTrigger.create({
-  //     trigger: bgAnim,
-  //     start:"top bottom",
-  //     end:"+=100%",
-  //     animation: animateBg,
-  //   });
-
-  // },{dependencies :[wrapper.current, bgAnimRef?.current], scope: wrapper?.current}
-
-
-
-  // )
-
-
-
-  const [showModal, setShowModal] = useState(false);
+ const [showModal, setShowModal] = useState(false);
 
   const lenis = useLenis();
 
@@ -90,7 +65,7 @@ const HomeWhoWeCare = (props) => {
             className="md:flex gap-2 mt-[68px]  text-[16px] font-medium text-[#FFF] tracking-[0.32px] hidden hover:text-secondary transition-all duration-300 ease-in-out w-max group "
           >
             KNOW MORE ABOUT US
-            <Image src="/images/arrow.svg" className={'group-hover:translate-x-1 '}  width={26} height={14} alt="img" />{" "}
+            <Image src="/images/arrow.svg" className={'translate-x-0 group-hover:translate-x-1  transition-all duration-300 ease-in-out'}  width={26} height={14} alt="img" />{" "}
           </Link>
         </div>
 

@@ -32,16 +32,7 @@ const CareComponent = ({data}) => {
     },{scope: outerDiv}
   )
 
-
-
-
-
-
-
-
-
-
-  return (
+return (
     <div className='py-[35px] xl:py-0 w-full md:w-6/12 xl:w-3/12 ' ref={outerDiv}>
       <div className="flex items-start gap-[58px] sm:gap-[26px]  xl:gap-[19px] " ref={counterDiv}>
         

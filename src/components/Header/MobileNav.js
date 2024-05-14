@@ -38,7 +38,7 @@ const MobileNav = () => {
           navShow ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className=" flex justify-between px-4 pr-1 py-5">
+        <div className=" flex justify-between px-4 pr-1 py-5 bg-white">
 
           <div>
             <figure>
@@ -68,7 +68,7 @@ const MobileNav = () => {
         </div>
 
         
-      <div className={'flex flex-col justify-between fixed overflow-y-scroll mt-2  w-full '} style={{ height: 'calc(100vh - 80px)' }}>
+      <div className={'flex flex-col justify-between fixed overflow-y-scroll bg-white  w-full '} style={{ height: 'calc(100vh - 72px)' }}>
 
         
       <nav className="">

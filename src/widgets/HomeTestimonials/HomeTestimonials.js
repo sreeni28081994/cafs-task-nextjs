@@ -51,7 +51,7 @@ const HomeTestimonials = (props) => {
           <div className={"max-w-[754px] w-full relative"}>
           <button className={`w-10 h-10 absolute right-0 top-0 bg-white font-bold text-black z-10 flex justify-center items-center  `} aria-label={"close"} onClick={()=>handleClose()}> <MdClose size={24}/>   </button>
 
-            <figure className="popupVideo">
+            <figure className="popupVideo ">
               <video
                 src="/images/testimonialVideo.mp4"
                 loop
