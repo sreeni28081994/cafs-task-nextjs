@@ -17,7 +17,7 @@ const headerNavLinks = {
           title: "Corporates & Institutes",
           content:
             "We understand the unique demands of the professional, institutional and educational realms. CAFS finds delight in curating safe and healthy culinary experiences that not only meet but also exceed expectations.",
-            imgURL: "/images/serveImg2.jpg",
+            imgURL: "/images/serveImg.jpg",
 
         },
 
