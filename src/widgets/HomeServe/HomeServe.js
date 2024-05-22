@@ -114,7 +114,11 @@ const HomeServe = (props) => {
   );
 
   return (
-    <section className="    container relative base   " ref={pinSection}>
+
+    <section className={'bg-[#fff]'} data-widget="HomeServe">
+
+      
+    <div className="container relative base " ref={pinSection}>
       <div
         className={
           "w-[3.15px] h-[114.36px] hidden xl:block fixed top-[50%] right-3 z-40 bg-[#DEDEDE] innerdiv_base "
@@ -182,7 +186,7 @@ const HomeServe = (props) => {
             <div className="relative w-[637px] overflow-hidden">
               <figure className="serveFigure transition-all duration-300   ">
                 <Image
-                  src="/images/serveImg.jpg"
+                  src="/images/serveImg.webp"
                   alt="serveImg"
                   className="w-full h-full object-cover"
                   fill
@@ -192,7 +196,7 @@ const HomeServe = (props) => {
               </figure>
               <figure className="relative lg:absolute  left-0 top-0 photo w-full h-full serveFigure transition-all duration-300    ">
                 <Image
-                  src="/images/serveimg2.jpg"
+                  src="/images/serveimg2.webp"
                   alt="serveImg"
                   className="w-full h-full object-cover"
                   fill
@@ -202,7 +206,7 @@ const HomeServe = (props) => {
               </figure>
               <figure className="relative lg:absolute  left-0 top-0 photo w-full h-full serveFigure transition-all duration-300 ">
                 <Image
-                  src="/images/serveimg3.jpg"
+                  src="/images/serveimg3.webp"
                   alt="serveImg"
                   className="w-full h-full object-cover"
                   fill
@@ -214,7 +218,11 @@ const HomeServe = (props) => {
           </div>
         </div>
       </div>
+    </div>
+
     </section>
+
+
   );
 };
 

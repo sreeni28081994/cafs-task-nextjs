@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
 const HomePage = async() => {
   return (
     <>
-     <main className="isHome">
+     <main className="isHome ">
       {data && (
           <WidgetBlocks widgets={data?.homepage?.data?.widgets}></WidgetBlocks>
       )}

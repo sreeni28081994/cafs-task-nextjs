@@ -15,7 +15,7 @@ const MainHeader = () => {
       const header = self?.selector(".anim_header");
 
       const tl1 = gsap.timeline();
-      tl1.to(header, { y: 0, opacity: 1, duration: 0.6, delay: 0.1 });
+      tl1.to(header, { marginTop: 0, opacity: 1, duration: 0.6, delay: 0.1 });
     },
     { scope: outerSection }
   );
@@ -35,9 +35,10 @@ const MainHeader = () => {
     <header
       ref={outerSection}
       className={`header bg-transparent fixed top-0 left-0 w-full z-40 ${
-        state == true ? "active" : ""
+        state == true ? "active " : " "
       } `}
     >
+
       <div className="container m-auto px-4">
         <div className="flex items-center justify-between py-4  ">
           <div className="logo text-white anim_header ">
@@ -57,6 +58,8 @@ const MainHeader = () => {
           <div className="flex items-center leading-5  anim_header ">
             <NavLinks />
           </div>
+
+
 
           <MobileNav  />
         </div>

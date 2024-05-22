@@ -71,7 +71,7 @@
               "title1_":"Catering",
             "serveContent1":"Soar to new culinary heights with our travel catering services. With attention to detail and top-notch service, passengers will experience an excellent gourmet menu that reflects the prestige of your company. Our meticulously crafted menus feature premium ingredients and accommodate diverse preferences, placing special emphasis on freshness, safety and quality.",
             "Serve": true,
-            "imgURL": "/images/serveImg.jpg"
+            "imgURL": "/images/serveImg.webp"
    
           },
           {
@@ -81,7 +81,7 @@
             "title1_":"& Institutes",
           "serveContent1":"We understand the unique demands of the professional, institutional and educational realms. CAFS finds delight in curating safe and healthy culinary experiences that not only meet but also exceed expectations.",
           "Serve":false,
-          "imgURL": "/images/serveimg2.jpg"
+          "imgURL": "/images/serveimg2.webp"
 
  
         },
@@ -92,7 +92,7 @@
           "title1_":"Catering",
         "serveContent1":"Our retail catering services offer a delightful blend of health and taste for your shelves. At CAFS, we understand the significance of offering your customers nourishing and wholesome options. Our commitment to excellence is reflected in every carefully prepared food item, whether it’s a wholesome meal, a simple snack or anything in between. We are setting a new standard for quality in retail catering.",
         "Serve":false,
-        "imgURL": "/images/serveimg3.jpg"
+        "imgURL": "/images/serveimg3.webp"
 
 
 

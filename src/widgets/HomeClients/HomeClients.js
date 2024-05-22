@@ -4,7 +4,7 @@ import React from "react";
 
 const HomeClients = () => {
     return (
-        <section className=" py-[50px] xl:py-[133px] overflow-x-hidden">
+        <section className=" py-[50px] xl:py-[133px] overflow-x-hidden bg-[#fff]">
             <div className="container">
                 <h2 className=' lg:!text-[60px] xl:!text-[100px]  mb-[32px] xl:mb-0'>
                     Our <i className="font-serief ">Clients</i>{" "}

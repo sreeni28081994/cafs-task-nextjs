@@ -4,7 +4,7 @@ import React from "react";
 
 const HomeInsights = (props) => {
   return (
-    <section className=" py-[50px]  xl:py-[158px]">
+    <section className=" py-[50px]  xl:py-[158px] bg-[#fff]">
       <div className="container">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-2/6 w-full">

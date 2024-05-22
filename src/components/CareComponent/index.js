@@ -34,7 +34,7 @@ const CareComponent = ({data}) => {
 
 return (
     <div className='py-[35px] xl:py-0 w-full md:w-6/12 xl:w-3/12 ' ref={outerDiv}>
-      <div className="flex items-start gap-[58px] sm:gap-[26px]  xl:gap-[19px] " ref={counterDiv}>
+      <div className="flex items-start gap-[40px] sm:gap-[26px]  xl:gap-[19px] " ref={counterDiv}>
         
         <figure className='pt-[13px]'>
           
