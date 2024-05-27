@@ -23,7 +23,7 @@ const MainHeader = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window?.scrollY > 50  && !document.querySelector(".services:hover")  )   {
+      if (window?.scrollY > 50  && !document.querySelector(".services:hover") &&  !document.querySelector(".megamenu:hover")  )   {
         setstate(true);
       } else {
         setstate(false);
