@@ -10,10 +10,12 @@ const NavLinks = () => {
   const [content, setContent] = useState(0);
 
   const showMenuHandler = (key) => {
-    if (key === 1) { // Assuming "Services" is at index 1
+    if (key === 1 ) { // Assuming "Services" is at index 1
       setMenu(true);
       document.querySelector(".header").classList.add("menu-active");
     }
+
+
   };
 
   const hideMenuHandler = () => {
