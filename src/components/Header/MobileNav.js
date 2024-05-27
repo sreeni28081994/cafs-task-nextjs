@@ -68,10 +68,10 @@ const MobileNav = () => {
         </div>
 
         
-      <div className={'flex flex-col justify-between fixed overflow-y-scroll bg-white  w-full '} style={{ height: 'calc(100vh - 72px)' }}>
+      <div className={'flex flex-col justify-between fixed  bg-white  w-full '} style={{ height: 'calc(100vh - 72px)' }}>
 
         
-      <nav className="">
+      <nav className="overflow-y-scroll">
           {headerNavLinks?.links?.map((link) => (
             <div key={link.title} className="py-[30px] border-b-[1px] border-b-[#D9D9D9] mx-4">
               <Link

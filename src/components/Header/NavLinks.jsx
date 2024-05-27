@@ -5,14 +5,14 @@ import headerNavLinks from "@/api/staticData/headerNavLinks";
 import Link from "next/link";
 import Image from "next/image";
 
-const NavLinks = () => {
+const NavLinks = ({setIsMenuActive}) => {
   const [showMenu, setMenu] = useState(null);
   const [content, setContent] = useState(0);
 
   const showMenuHandler = (key) => {
     if (key === 1 ) { // Assuming "Services" is at index 1
       setMenu(true);
-      document.querySelector(".header").classList.add("menu-active");
+      setIsMenuActive(true);
     }
 
 
@@ -22,7 +22,7 @@ const NavLinks = () => {
     setTimeout(() => {
       if (!document.querySelector(".megamenu:hover") && !document.querySelector(".services:hover")) {
         setMenu(null);
-        document.querySelector(".header").classList.remove("menu-active");
+        setIsMenuActive(false);
       }
     }, 100);
   };

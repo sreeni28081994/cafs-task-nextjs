@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 
 const MainHeader = () => {
   const outerSection = useRef(null);
-
+  const [isMenuActive, setIsMenuActive] = useState(false);
   useGSAP(
     (self) => {
       const header = self?.selector(".anim_header");
@@ -34,9 +34,10 @@ const MainHeader = () => {
   return (
     <header
       ref={outerSection}
-      className={`header bg-transparent fixed top-0 left-0 w-full z-40 ${
-        state == true ? "active " : " "
-      } `}
+      className={`header bg-transparent fixed top-0 left-0 w-full z-40 
+      ${ state == true ? "active " : " " }
+      ${isMenuActive ? "menu-active" : ""}
+       `}
     >
 
       <div className="container m-auto px-4">
@@ -56,7 +57,7 @@ const MainHeader = () => {
           </div>
 
           <div className="flex items-center leading-5  anim_header ">
-            <NavLinks />
+            <NavLinks setIsMenuActive={setIsMenuActive}/>
           </div>
 
 
